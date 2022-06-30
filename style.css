@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@100&display=swap');
+.box{
+    width: 580px;
+    height:140px;
+    left:112px;
+    border-radius: 40px;
+    border-color: rgba(217, 217, 217, 1);
+    color: white;   
+
+}
+form{
+
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 40px;
+    padding: 15px;
+    
+}
+fieldset{
+    border-radius: 40px;
+    border: 2px solid dodgerblue; 
+    
+}
+Body{
+    background-image: url(imagem1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: right;
+    min-height: 100vh;
+    max-width:100vm;
+    align-items: unset;
+    font-family: 'Gantari', sans-serif;
+    font-size: 14px;
+}
+legend{
+    border: 1px solid #1a237e;
+    padding: 10px;
+    text-align: center;
+    background-color: #1a237e;
+    border-radius: 5px;
+    color: white;
+    text-shadow: #4158D0;
+    font-family: 'Exo 2', sans-serif;
+}
+.inputBox{
+    position: relative;
+}
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: wheat;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+
+}
+.label-input{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputuser:focus ~.label-input, 
+.inputuser:valid ~.label-input{
+    top:-20px;
+    font-size: 11px;
+    color: #000051;
+    font-weight: 700;   
+
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    ;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    transition: .5s;
+    cursor:pointer ;
+    color:white;
+    outline: none;
+    
+}
+#submit:hover{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+}
